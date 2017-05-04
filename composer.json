@@ -1,6 +1,6 @@
 {
     "name": "tyler-zou/phpgame",
-    "description": "this is a game api framework",
+    "description": "This is framework for a game apis",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,6 +11,9 @@
     ],
     "minimum-stability": "dev",
     "require": {
-	"php": ">=7.0.0"
+	    "php": ">=7.0.0"
+    },
+    "autoload": {
+        "classmap" : ["SzSystem.class.php"]
     }
 }
