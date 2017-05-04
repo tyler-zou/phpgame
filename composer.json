@@ -1,0 +1,16 @@
+{
+    "name": "tyler-zou/phpgame",
+    "description": "this is a geme api framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tyler ZOU",
+            "email": "zzxaire@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+	"php": ">=7.0.0"
+    }
+}
