@@ -1,0 +1,60 @@
+<div class="row">
+    <div id="ractiveAlert" class="col-lg-12">
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <h4>Input your names:</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">First</span>
+                    <input id="ractiveFirstName" type="text" class="form-control" placeholder="First Name">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">Last</span>
+                    <input id="ractiveLastName" type="text" class="form-control" placeholder="Last Name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <button id="ractiveSubmit" type="submit" class="btn btn-primary">Submit</button>
+                <button id="ractiveClear" class="btn">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <h4>Data:</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Uuid</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#users}}
+                <tr>
+                    <td>{{firstName}}</td>
+                    <td>{{lastName}}</td>
+                    <td>{{identify}}</td>
+                </tr>
+                {{/users}}
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+{
+    "name": "grunt-git-deploy",
+    "description": "Deploy git code to server",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "async": "~0.2.5"
+    },
+    "env": {
+        "dev": {
+            "framework": {
+                "clonePath": "/Users/jonathan/prog/projects/clone",
+                "destPath": "/Users/jonathan/prog/projects/dest",
+                "repo": "git@gitlab.xenojoshua.com:framework-php/szframework.git",
+                "branch": "develop",
+                "isApp": false,
+                "isConfig": false
+            },
+            "flowershop2": {
+                "clonePath": "/Users/jonathan/prog/projects/clone",
+                "destPath": "/Users/jonathan/prog/www",
+                "repo": "git@gitlab.xenojoshua.com:flowershop2-php/flowershop2-php.git",
+                "branch": "develop",
+                "isApp": true,
+                "isConfig": false
+            },
+            "flowershop2_config": {
+                "clonePath": "/Users/jonathan/prog/projects/clone",
+                "destPath": "/Users/jonathan/prog/www",
+                "repo": "git@gitlab.xenojoshua.com:flowershop2-php/flowershop2-config.git",
+                "branch": "jonathan",
+                "isApp": false,
+                "isConfig": "flowershop2"
+            },
+            "ccs": {
+                "clonePath": "/Users/jonathan/prog/projects/clone",
+                "destPath": "/Users/jonathan/prog/www",
+                "repo": "git@gitlab.xenojoshua.com:framework-php/ccs.git",
+                "branch": "develop",
+                "isApp": true,
+                "isConfig": false
+            },
+            "ccs_config": {
+                "clonePath": "/Users/jonathan/prog/projects/clone",
+                "destPath": "/Users/jonathan/prog/www",
+                "repo": "git@gitlab.xenojoshua.com:framework-php/ccs-config.git",
+                "branch": "jonathan",
+                "isApp": false,
+                "isConfig": "ccs"
+            }
+        }
+    }
+}

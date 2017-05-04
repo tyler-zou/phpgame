@@ -1,0 +1,36 @@
+{
+    "name": "grunt-git-deploy",
+    "description": "Deploy git code to server",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "async": "~0.2.5"
+    },
+    "env": {
+        "dev": {
+            "framework": {
+                "clonePath": "/data1/www/projects/clone",
+                "destPath": "//data1/www/projects/dest",
+                "repo": "http://deploy:123456@172.17.0.52:8080/git/framework.php.git",
+                "branch": "develop",
+                "isApp": false,
+                "isConfig": false
+            },
+            "flowershop2.shinezoneapp.com": {
+                "clonePath": "/data1/www/projects/clone",
+                "destPath": "/data1/www",
+                "repo": "http://fs2_deploy:1310121qa@172.17.0.52:8080/git/flowershop2_php.git",
+                "branch": "develop",
+                "isApp": true,
+                "isConfig": false
+            },
+            "flowershop2_config": {
+                "clonePath": "/data1/www/projects/clone",
+                "destPath": "/data1/www",
+                "repo": "http://fs2_deploy:1310121qa@172.17.0.52:8080/git/flowershop2_config.git",
+                "branch": "master",
+                "isApp": false,
+                "isConfig": "flowershop2.shinezoneapp.com"
+            }
+        }
+    }
+}
