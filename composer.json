@@ -1,11 +1,11 @@
 {
     "name": "tyler-zou/phpgame",
-    "description": "this is a geme api framework",
+    "description": "this is a game api framework",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Tyler ZOU",
+            "name": "Tyler Zou",
             "email": "zzxaire@163.com"
         }
     ],
